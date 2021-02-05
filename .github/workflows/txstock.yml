@@ -1,4 +1,4 @@
-name: txstock
+name: txstock 
 
 on:
   workflow_dispatch:
