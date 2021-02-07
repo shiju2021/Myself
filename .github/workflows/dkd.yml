@@ -3,7 +3,7 @@ name: dkd
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/10 0-16 * * *'
+     - cron: '13 0-15 * * *'
   watch:
     types: started
 jobs:
