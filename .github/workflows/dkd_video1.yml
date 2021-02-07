@@ -1,4 +1,4 @@
-name: dkd_video
+name: dkd_video1
 
 on:
   workflow_dispatch:
@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        DKD_VIDEO_BD: ${{ secrets.DKD_VIDEO_BD }}
-        DKD_VIDEO_HD: ${{ secrets.DKD_VIDEO_HD }}     
-        DKD_SPHB_BD: ${{ secrets.DKD_SPHB_BD }}           
+        DKD_VIDEO_BD: ${{ secrets.DKD_VIDEO_BD1 }}
+        DKD_VIDEO_HD: ${{ secrets.DKD_VIDEO_HD1 }}     
+        DKD_SPHB_BD: ${{ secrets.DKD_SPHB_BD1 }}           
         TZ: Asia/shanghai
     steps:
       - name: Checkout
@@ -26,8 +26,8 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【dkd_video】'
-        if: env.DKD_VIDEO_BD
+      - name: '运行 【dkd_video1】'
+        if: env.DKD_VIDEO_BD1
         run: |
           node scripts/dkd_video.js
         env:
