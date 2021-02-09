@@ -3,7 +3,7 @@ name: dkd_video
 on:
   workflow_dispatch:
   schedule:
-     - cron: '39 2 * * *'
+     - cron: '33 2-4/1 * * *'
   watch:
     types: started
 jobs:
