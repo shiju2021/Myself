@@ -3,7 +3,7 @@ name: txstock
 on:
   workflow_dispatch:
   schedule:
-     - cron: '39 7 * * *'
+     - cron: '39 8 * * *'
   watch:
     types: started
 jobs:
